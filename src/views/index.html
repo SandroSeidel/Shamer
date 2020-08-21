@@ -1,0 +1,69 @@
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Shamer | what about a joke?</title>
+
+        <link rel="stylesheet" href="../../styles/main.css">
+        <link rel="stylesheet" href="../../styles/index.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="logo-name">Shamer</h1>
+            <textarea name="" id="joke-text-area" cols="30" rows="10" readonly> Here comes the joke </textarea><br>
+            <button class="get-joke-button">Make-me laugth</button><br>
+            <fieldset class="joke-tags">
+
+                <input type="checkbox" name="any" checked>
+                <label for = "any"> Any </label><br>
+
+                <input type="checkbox" name="nsfw">
+                <label for = "nsfw"> nsfw </label><br>
+
+                <input type="checkbox" name="religious">
+                <label for = "religious"> Religious </label><br> 
+
+                <input type="checkbox" name="political">
+                <label for = "political"> Political </label><br>
+
+                <input type="checkbox" name="racist">
+                <label for = "racist"> Racist </label><br>
+
+                <input type="checkbox" name="sexist">
+                <label for = "sexist"> Sexist </label><br>
+                
+            </fieldset>
+        </div>
+    </body>
+    <script src="../../public/scripts/joke-search.js"></script>
+    <script>
+
+        async function getJoke(tag) {
+        const response = await fetch('https://sv443.net/jokeapi/v2/joke/Any' + String(tag));
+
+        console.log(response);
+        
+        const data = await response.json();
+        // console.log(data);
+        }
+
+        var blackListFlags = '?blacklistFlags=';
+
+        var tags = document.querySelectorAll('input');
+        tags.forEach((tagValue) => {
+           console.log(tagValue.name);
+           if (tagValue.checked == true) {
+               blackListFlags += (',' + tagValue.name);
+           }
+        })
+
+        console.log(blackListFlags.substr(17));
+
+        getJoke(blackListFlags.substr(17));  
+        
+    </script>
+
+</html>

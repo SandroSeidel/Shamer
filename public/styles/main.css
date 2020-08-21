@@ -1,0 +1,27 @@
+:root{
+    --color-general-background: #313030;	
+    --color-borderline: #696969;
+    --color-fonts-ligthGrey: #5c5454;
+    font-size: 60%;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html {
+    background-color: var(--color-general-background);
+    padding: 1rem;
+    border: 0.5rem solid var(--color-borderline);
+}
+
+body{
+    height:100vh;
+    /* display: grid;
+    grid-template-rows: 2fr 2fr 1fr; */
+}
+

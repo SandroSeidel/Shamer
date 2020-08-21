@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    grid-template-rows: 2fr 2fr 1fr 1fr;
+    height: 80%;
+    width: auto;
+
+    justify-content: center;
+}
+
+.logo-name {
+    font-size: 7rem;
+
+    margin: auto;
+    vertical-align: middle;
+}
+
+#joke-text-area {
+    justify-content: middle;
+    border-radius: 10%;
+    margin-bottom: -2rem;
+}
+
+.get-joke-button {
+    border-radius: 8%;
+}
+
+.joke-tags {
+    font-size: 1.5rem;
+}
+
+.joke-tags label {
+    color: rgb(214, 210, 210);
+}

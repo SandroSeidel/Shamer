@@ -1,0 +1,49 @@
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+body .logo-name {
+    /* border: 5px solid red; */
+    margin: auto;
+    vertical-align: middle;
+    display: block;
+
+    font-size: 7rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration-color: aquamarine;
+
+}
+
+body .ready-button {
+    /* border: 5px solid red; */
+    border-radius: 12%;
+
+    font-size: 5.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    background-color: var(--color-fonts-ligthGrey);
+    margin: auto;
+    padding: 20px;
+    vertical-align: middle;
+    display: block;
+
+    transition: background 0.2s;
+}
+
+body .ready-button:hover {
+    background-color: rgb(29, 27, 27);
+}
+
+body .warning-message {
+    /* border: 5px solid red; */
+
+    font-size: 1.5rem;
+
+    margin: auto;
+    vertical-align: middle;
+    display: block;
+}

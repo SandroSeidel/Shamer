@@ -1,0 +1,24 @@
+{
+  "name": "Shamer",
+  "version": "1.0.0",
+  "description": "Want a joke? what about a forbidden one?",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SandroSeidel/Shamer.git"
+  },
+  "author": "Sandro Seidel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SandroSeidel/Shamer/issues"
+  },
+  "homepage": "https://github.com/SandroSeidel/Shamer#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
